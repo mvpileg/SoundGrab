@@ -29,6 +29,8 @@ class PrecorderMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupObservers()
+        
         self.model = PrecorderModel()
         
         setupAudio()
@@ -46,7 +48,7 @@ class PrecorderMainViewController: UIViewController {
     private func setupTableViewController(){
         tableView.delegate = self
         tableView.dataSource = self
-        setupObserver()
+        
     }
     
     private func setupAudio(){
@@ -65,7 +67,7 @@ class PrecorderMainViewController: UIViewController {
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: [.defaultToSpeaker, .mixWithOthers])
             try session.setActive(true)
         }catch {
-            //ERROR Setting up microphone
+            NotificationHelper.sendNotification(withName: .errorSettingUpMicrophone)
         }
     }
 }

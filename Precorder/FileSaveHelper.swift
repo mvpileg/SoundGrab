@@ -11,17 +11,17 @@ import UIKit
 
 class FileSaveHelper {
   
-    fileprivate enum FileErrors: Error {
+    private enum FileErrors: Error {
         case fileNotSaved
     }
     
-    fileprivate let directory: FileManager.SearchPathDirectory!
-    fileprivate let directoryPath: String!
-    fileprivate let fileManager = FileManager.default
-    fileprivate let fileName: String!
-    fileprivate let filePath: String!
-    fileprivate let fullyQualifiedPath: String!
-    fileprivate let subDirectory: String!
+    private let directory: FileManager.SearchPathDirectory!
+    private let directoryPath: String!
+    private let fileManager = FileManager.default
+    private let fileName: String!
+    private let filePath: String!
+    private let fullyQualifiedPath: String!
+    private let subDirectory: String!
     
     private var fileExists: Bool {
         get {
@@ -44,8 +44,6 @@ class FileSaveHelper {
         self.filePath = directoryPath + self.subDirectory
         self.fullyQualifiedPath = "\(filePath!)/\(self.fileName!)"
         
-        
-        
         createDirectory()
     }
     
@@ -59,15 +57,11 @@ class FileSaveHelper {
         }
     }
     
-    func getData() -> Data {
-        return (try! Data(contentsOf: URL(fileURLWithPath: fullyQualifiedPath)))
-    }
-    
     func getURLToFile() -> URL {
         return URL(fileURLWithPath: fullyQualifiedPath)
     }
     
-    fileprivate func createDirectory() {
+    private func createDirectory() {
         if !directoryExists {
             do {
                 try fileManager.createDirectory(atPath: filePath, withIntermediateDirectories: false, attributes: nil)

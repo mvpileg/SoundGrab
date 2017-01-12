@@ -45,9 +45,9 @@ public class FileModel {
         AudioTrimmer.trimClipBeginning(originalFileURL: url, trimmedFileURL: trimmedURL, seconds: length) { isSuccessful in
             if isSuccessful {
                 self.reloadFiles()
-                self.sendNewFileNotification()
+                NotificationHelper.sendNotification(withName: .newRecording)
             } else {
-                //ERROR SAVING FILE
+                NotificationHelper.sendNotification(withName: .errorSavingFile)
             }
         }
     }
@@ -75,13 +75,10 @@ public class FileModel {
                 files.append(File(fileName: fileName, fullyQualifiedPath: "\(path)/\(fileName)"))
             }
         } catch {
-            //ERROR LOADING FILES
+            NotificationHelper.sendNotification(withName: .errorLoadingFiles)
         }
     }
     
-    private func sendNewFileNotification(){
-        NotificationCenter.default.post(NotificationTypes.newTabNotification)
-    }
   
 }
 

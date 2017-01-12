@@ -26,7 +26,9 @@ class PrecorderModel {
     
     
     //MARK: Audio
-        
+    
+    //Instead of creating an extremely large audio file and trimming it whenever the user captures the sound, this app uses a 2 audio track recording model, with a staggered start.  This model ensures that we have an audio clip adequate length whenever the user captures the sound, but also can run indefinitely without worrying about space on the phone, as old, unused audio tracks are overwritten
+
     func resetGuidingTrack(){
         
         func callAfterTime(seconds: Double, delayedFunction: @escaping ()->Void){
@@ -37,11 +39,14 @@ class PrecorderModel {
         }
         
         guidingTrack.resetTrack()
+        
         callAfterTime(seconds: maxSaveTime * 2.0) {
-            self.resetGuidingTrack(); self.activeTrack = self.secondaryTrack; print("Secondary Active")
+            self.resetGuidingTrack()
+            self.activeTrack = self.secondaryTrack;
         }
         callAfterTime(seconds: maxSaveTime) {
-            self.secondaryTrack.resetTrack(); self.activeTrack = self.guidingTrack; print("Guiding active")
+            self.secondaryTrack.resetTrack()
+            self.activeTrack = self.guidingTrack;
         }
     }
     
@@ -60,7 +65,7 @@ class PrecorderModel {
         if let stagingUrl = stagingUrlOptional {
             fileModel.addFile(url: stagingUrl, length: secondsToSave)
         } else {
-            //error saving file
+            NotificationHelper.sendNotification(withName: .errorSavingFile)
         }
     }
 

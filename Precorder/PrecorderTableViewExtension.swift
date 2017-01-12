@@ -20,7 +20,7 @@ extension PrecorderMainViewController: UITableViewDelegate, UITableViewDataSourc
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
         } catch {
-            //ERROR PLAYING AUDIO
+            NotificationHelper.sendNotification(withName: .errorPlayingAudio)
         }
     }
     
@@ -34,17 +34,6 @@ extension PrecorderMainViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.getFileCount()
-    }
-
-    func setupObserver(){
-        NotificationCenter.default.addObserver(forName: NotificationTypes.newTabNotificationName, object: nil, queue: nil, using: addRowForNewSavedFile)
-    }
-    
-    func addRowForNewSavedFile(notification: Notification){
-        DispatchQueue.main.async {
-            let indexPath = IndexPath(row: self.model.getFileCount()-1, section: 0)
-            self.tableView.insertRows(at: [indexPath], with: .automatic)
-        }
     }
     
     private func getDisplayName(forFile: File)->String{

@@ -44,7 +44,7 @@ class AudioTrack {
         do {
             recorder = try AVAudioRecorder(url: url, settings: settings)
         } catch {
-            //error creating recorder
+            NotificationHelper.sendNotification(withName: .errorCreatingRecorder)
         }
     }
     

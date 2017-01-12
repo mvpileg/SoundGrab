@@ -38,9 +38,7 @@ class AudioTrimmer {
         let exporter = AVAssetExportSession(asset: asset, presetName: AVAssetExportPresetAppleM4A)
         
         exporter?.outputFileType = AVFileTypeAppleM4A
-        let url = URL(fileURLWithPath: outputURL.path)
-        exporter?.outputURL = url
-        
+        exporter?.outputURL = outputURL
         return exporter
     }
 
@@ -56,8 +54,7 @@ class AudioTrimmer {
 
         let startTime = CMTimeMake(Int64(startTimeInSeconds), 1)
         let endTime = CMTimeMake(Int64(originalDuration), 1)
-        print(startTime)
-        print(endTime)
+
         return CMTimeRangeFromTimeToTime(startTime, endTime)
     }
     
