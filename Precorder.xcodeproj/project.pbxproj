@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9834C5C1E25F7B800F33E95 /* NotificationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9834C5B1E25F7B800F33E95 /* NotificationTypes.swift */; };
+		C9834C5E1E2717AD00F33E95 /* AudioTrimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9834C5D1E2717AD00F33E95 /* AudioTrimmer.swift */; };
+		C9834C601E27856400F33E95 /* FileStagingAreaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9834C5F1E27856400F33E95 /* FileStagingAreaHelper.swift */; };
+		C9D7E9B71E25DC9F004016F6 /* PrecorderTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7E9B61E25DC9F004016F6 /* PrecorderTableViewExtension.swift */; };
+		C9D7E9B91E25DFBA004016F6 /* PrecorderPickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7E9B81E25DFBA004016F6 /* PrecorderPickerViewExtension.swift */; };
+		C9D7E9BE1E25F08B004016F6 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7E9BD1E25F08B004016F6 /* FileModel.swift */; };
+		C9DD42201E25A2030056259C /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD421F1E25A2030056259C /* AudioTrack.swift */; };
+		C9DD42221E25B4500056259C /* PrecorderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD42211E25B4500056259C /* PrecorderModel.swift */; };
+		C9DD42291E25D80E0056259C /* AudioClipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD42281E25D80E0056259C /* AudioClipTableViewCell.swift */; };
 		C9EE9EC81E1B692000E17E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EC71E1B692000E17E41 /* AppDelegate.swift */; };
-		C9EE9ECA1E1B692000E17E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EC91E1B692000E17E41 /* ViewController.swift */; };
+		C9EE9ECA1E1B692000E17E41 /* PrecorderMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EC91E1B692000E17E41 /* PrecorderMainViewController.swift */; };
 		C9EE9ECD1E1B692000E17E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EE9ECB1E1B692000E17E41 /* Main.storyboard */; };
 		C9EE9ECF1E1B692000E17E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EE9ECE1E1B692000E17E41 /* Assets.xcassets */; };
 		C9EE9ED21E1B692000E17E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EE9ED01E1B692000E17E41 /* LaunchScreen.storyboard */; };
 		C9EE9EDD1E1B692000E17E41 /* PrecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EDC1E1B692000E17E41 /* PrecorderTests.swift */; };
 		C9EE9EE81E1B692000E17E41 /* PrecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EE71E1B692000E17E41 /* PrecorderUITests.swift */; };
+		C9EE9EF61E1B6FD700E17E41 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE9EF51E1B6FD700E17E41 /* FileSaveHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9834C5B1E25F7B800F33E95 /* NotificationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTypes.swift; sourceTree = "<group>"; };
+		C9834C5D1E2717AD00F33E95 /* AudioTrimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrimmer.swift; sourceTree = "<group>"; };
+		C9834C5F1E27856400F33E95 /* FileStagingAreaHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStagingAreaHelper.swift; sourceTree = "<group>"; };
+		C9D7E9B61E25DC9F004016F6 /* PrecorderTableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecorderTableViewExtension.swift; sourceTree = "<group>"; };
+		C9D7E9B81E25DFBA004016F6 /* PrecorderPickerViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecorderPickerViewExtension.swift; sourceTree = "<group>"; };
+		C9D7E9BD1E25F08B004016F6 /* FileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		C9DD421F1E25A2030056259C /* AudioTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		C9DD42211E25B4500056259C /* PrecorderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecorderModel.swift; sourceTree = "<group>"; };
+		C9DD42281E25D80E0056259C /* AudioClipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioClipTableViewCell.swift; sourceTree = "<group>"; };
 		C9EE9EC41E1B692000E17E41 /* Precorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Precorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EE9EC71E1B692000E17E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9EE9EC91E1B692000E17E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9EE9EC91E1B692000E17E41 /* PrecorderMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecorderMainViewController.swift; sourceTree = "<group>"; };
 		C9EE9ECC1E1B692000E17E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9EE9ECE1E1B692000E17E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EE9ED11E1B692000E17E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,7 @@
 		C9EE9EE31E1B692000E17E41 /* PrecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EE9EE71E1B692000E17E41 /* PrecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecorderUITests.swift; sourceTree = "<group>"; };
 		C9EE9EE91E1B692000E17E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EE9EF51E1B6FD700E17E41 /* FileSaveHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSaveHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9DD42231E25D7A00056259C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD421F1E25A2030056259C /* AudioTrack.swift */,
+				C9DD42211E25B4500056259C /* PrecorderModel.swift */,
+				C9D7E9BD1E25F08B004016F6 /* FileModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C9DD42241E25D7AA0056259C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD42281E25D80E0056259C /* AudioClipTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C9DD42251E25D7B20056259C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE9EC91E1B692000E17E41 /* PrecorderMainViewController.swift */,
+				C9D7E9B61E25DC9F004016F6 /* PrecorderTableViewExtension.swift */,
+				C9D7E9B81E25DFBA004016F6 /* PrecorderPickerViewExtension.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C9DD42261E25D7BD0056259C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C9834C5D1E2717AD00F33E95 /* AudioTrimmer.swift */,
+				C9EE9EF51E1B6FD700E17E41 /* FileSaveHelper.swift */,
+				C9834C5B1E25F7B800F33E95 /* NotificationTypes.swift */,
+				C9834C5F1E27856400F33E95 /* FileStagingAreaHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		C9DD42271E25D7C60056259C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE9EC71E1B692000E17E41 /* AppDelegate.swift */,
+				C9EE9ECE1E1B692000E17E41 /* Assets.xcassets */,
+				C9EE9ED01E1B692000E17E41 /* LaunchScreen.storyboard */,
+				C9EE9ED31E1B692000E17E41 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		C9EE9EBB1E1B692000E17E41 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +167,12 @@
 		C9EE9EC61E1B692000E17E41 /* Precorder */ = {
 			isa = PBXGroup;
 			children = (
-				C9EE9EC71E1B692000E17E41 /* AppDelegate.swift */,
-				C9EE9EC91E1B692000E17E41 /* ViewController.swift */,
 				C9EE9ECB1E1B692000E17E41 /* Main.storyboard */,
-				C9EE9ECE1E1B692000E17E41 /* Assets.xcassets */,
-				C9EE9ED01E1B692000E17E41 /* LaunchScreen.storyboard */,
-				C9EE9ED31E1B692000E17E41 /* Info.plist */,
+				C9DD42231E25D7A00056259C /* Model */,
+				C9DD42241E25D7AA0056259C /* View */,
+				C9DD42251E25D7B20056259C /* Controller */,
+				C9DD42261E25D7BD0056259C /* Helper */,
+				C9DD42271E25D7C60056259C /* Other */,
 			);
 			path = Precorder;
 			sourceTree = "<group>";
@@ -262,7 +332,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EE9ECA1E1B692000E17E41 /* ViewController.swift in Sources */,
+				C9DD42291E25D80E0056259C /* AudioClipTableViewCell.swift in Sources */,
+				C9D7E9BE1E25F08B004016F6 /* FileModel.swift in Sources */,
+				C9DD42221E25B4500056259C /* PrecorderModel.swift in Sources */,
+				C9834C5E1E2717AD00F33E95 /* AudioTrimmer.swift in Sources */,
+				C9EE9ECA1E1B692000E17E41 /* PrecorderMainViewController.swift in Sources */,
+				C9EE9EF61E1B6FD700E17E41 /* FileSaveHelper.swift in Sources */,
+				C9DD42201E25A2030056259C /* AudioTrack.swift in Sources */,
+				C9834C5C1E25F7B800F33E95 /* NotificationTypes.swift in Sources */,
+				C9834C601E27856400F33E95 /* FileStagingAreaHelper.swift in Sources */,
+				C9D7E9B91E25DFBA004016F6 /* PrecorderPickerViewExtension.swift in Sources */,
+				C9D7E9B71E25DC9F004016F6 /* PrecorderTableViewExtension.swift in Sources */,
 				C9EE9EC81E1B692000E17E41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +594,7 @@
 				C9EE9EEE1E1B692000E17E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9EE9EEF1E1B692000E17E41 /* Build configuration list for PBXNativeTarget "PrecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +603,7 @@
 				C9EE9EF11E1B692000E17E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9EE9EF21E1B692000E17E41 /* Build configuration list for PBXNativeTarget "PrecorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +612,7 @@
 				C9EE9EF41E1B692000E17E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
